@@ -209,10 +209,10 @@ elif choice =='14':
 elif choice =='15':
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("austinmcdonnell.6@gmail.com", "ALMswimboy1") 
+    server.login("your email address", "Password") 
     recp=str(input("write out the email address this is being sent to"))
     msg = str(input("Write out your email"))
-    server.sendmail("austinmcdonnell.6@gmail.com", recp, msg)
+    server.sendmail("email of person recieving", recp, msg)
     server.quit()
 
 elif choice == '16':
